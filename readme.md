@@ -3,6 +3,8 @@ Connecting ovms to traccar is easy using the osmand protocol
 
 thanks to @dexterbg https://www.goingelectric.de/forum/viewtopic.php?p=2161887#p2161887
 
+
+<pre>
 <code>
  
   // add the following to your /store/scripts/ovmsmain.js and change id and server-url
@@ -39,3 +41,4 @@ HTTP.Request({ url: "http://TRACCAR-SERVER:5055/?id=1234567&batt="+soc+"&lat="+l
 PubSub.subscribe("ticker.10", ticker10);
 PubSub.subscribe("ticker.3600", ticker3600);
 </code>
+</pre>
