@@ -7,8 +7,7 @@ https://docs.openvehicles.com/en/latest/userguide/events.html
 
 <pre>
 <code>
- 
-  // add the following to your /store/scripts/ovmsmain.js and change id and server-url
+// add the following to your /store/scripts/ovmsmain.js and change id and server-url
 
 
 //every 10 seconds if car is on
