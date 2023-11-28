@@ -1,6 +1,10 @@
-<code>
+Connecting ovms to traccar is easy using the osmand protocol
+====
 
-  
+thanks to @dexterbg
+
+<code>
+ 
   // add the following to your /store/scripts/ovmsmain.js and change id and server-url
 
 
