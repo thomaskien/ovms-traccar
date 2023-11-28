@@ -1,5 +1,7 @@
-// add the following to your /store/scripts/ovmsmain.js and change id and server-url
+<code>
 
+  
+  // add the following to your /store/scripts/ovmsmain.js and change id and server-url
 
 
 //every 10 seconds if car is on
@@ -15,6 +17,7 @@ HTTP.Request({ url: "http://TRACCAR-SERVER:5055/?id=1234567&batt="+soc+"&lat="+l
 } 
 };
 
+
 //every 60 minutes if car is off
 function ticker3600(){
 var on = OvmsMetrics.Value("v.e.on");
@@ -28,5 +31,7 @@ HTTP.Request({ url: "http://TRACCAR-SERVER:5055/?id=1234567&batt="+soc+"&lat="+l
 } 
 };
 
+//or use other ticker see ovms-documentation
 PubSub.subscribe("ticker.10", ticker10);
 PubSub.subscribe("ticker.3600", ticker3600);
+</code>
