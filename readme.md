@@ -1,7 +1,7 @@
 Connecting ovms to traccar is easy using the osmand protocol
 ====
 
-thanks to @dexterbg
+thanks to @dexterbg https://www.goingelectric.de/forum/viewtopic.php?p=2161887#p2161887
 
 <code>
  
