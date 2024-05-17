@@ -17,7 +17,7 @@ var soc = OvmsMetrics.AsFloat("v.b.soc");
 var lat = OvmsMetrics.AsFloat("v.p.latitude");
 var long = OvmsMetrics.AsFloat("v.p.longitude");
 var alt = OvmsMetrics.AsFloat("v.p.altitude");
-var speed = OvmsMetrics.AsFloat("v.p.speed");
+var speed = OvmsMetrics.AsFloat("v.p.speed")/1.852; //km/h to kn
 if (on === true) {
 HTTP.Request({ url: "http://TRACCAR-SERVER:5055/?id=1234567&batt="+soc+"&lat="+lat+"&lon="+long+"&alt="+alt+"&speed="+speed});
 } 
@@ -31,7 +31,7 @@ var soc = OvmsMetrics.AsFloat("v.b.soc");
 var lat = OvmsMetrics.AsFloat("v.p.latitude");
 var long = OvmsMetrics.AsFloat("v.p.longitude");
 var alt = OvmsMetrics.AsFloat("v.p.altitude");
-var speed = OvmsMetrics.AsFloat("v.p.speed");
+var speed = OvmsMetrics.AsFloat("v.p.speed")/1.852; //km/h to kn
 if (on === false) {
 HTTP.Request({ url: "http://TRACCAR-SERVER:5055/?id=1234567&batt="+soc+"&lat="+lat+"&lon="+long+"&alt="+alt+"&speed="+speed});
 } 
